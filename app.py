@@ -73,7 +73,7 @@ st.markdown("<h1>🌦️ Smart Weather Predictor</h1>", unsafe_allow_html=True)
 st.markdown("AI + heuristic rain probability. Enter current local conditions and tap Predict.")
 
 # try load model & feature order
-MODEL_FN = "weather_model.zst"
+MODEL_FN = "weather_model.pkl"
 FEATURES_FN = "weather_features.pkl"
 model = None
 feature_names = None
@@ -230,4 +230,5 @@ if st.checkbox("Show input features used (debug)"):
 
 st.markdown("---")
 st.markdown("Built for interactive demos — improves with real model & correct feature order.")
+
 
